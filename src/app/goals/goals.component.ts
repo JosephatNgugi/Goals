@@ -24,7 +24,7 @@ export class GoalsComponent implements OnInit {
       3,
       'Get new Phone Case',
       'Diana has her birthday coming up soon',
-      new Date(2022, 1, 12)
+      new Date(2023, 1, 12)
     ),
     new Goal(
       4,
@@ -32,7 +32,11 @@ export class GoalsComponent implements OnInit {
       'Pupper likes expensive snacks',
       new Date(2019, 0, 18)
     ),
-    new Goal(5, 'Solve math homework', 'Damn Math', new Date(2019, 2, 14)),
+    new Goal(
+      5,
+      'Solve math homework',
+      'Damn Math',
+      new Date(2019, 2, 14)),
     new Goal(
       6,
       'Plot my world domination plan',
