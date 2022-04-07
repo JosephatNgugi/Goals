@@ -2,7 +2,13 @@
   <h1>My Goals</h1>
   <hr>
   <ul>
-    <li *ngFor="let goal of goals">{{goal.id}} {{goal.name}}</li>
+    <!-- *ngFor is a for loop function in typescript -->
+    <div *ngFor="let goal of goals; let i = index">
+      <li>{{goal.id}} {{goal.name}}</li>
+      <button (click)="toggleDetails(i)">ToggleDetails</button>
+      <app-goal-detail *ngIf="goal.showDescription" [goal]="goal"></app-goal-detail>
+    </div>
   </ul>
+    <!-- *ngIf is an if statement in typescript -->
   <p *ngIf="goals.length > 5">Your goals are too many.</p>
 </div>
