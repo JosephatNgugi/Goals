@@ -9,7 +9,7 @@ import { Goal } from 'src/app/goal';
 })
 export class GoalDetailComponent implements OnInit {
 
-  @Input() goal!: Goal;
+  @Input() ingoal!: Goal;
   @Output() isComplete = new EventEmitter<boolean>();
 
   goalDelete(complete:boolean){

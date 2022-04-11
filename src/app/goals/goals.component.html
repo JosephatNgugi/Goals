@@ -12,7 +12,7 @@
 
         <!-- *ngIf is an if statement in typescript -->
         <div *ngIf='goal.showDescription'>
-          <app-goal-detail  [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
+          <app-goal-detail  [ingoal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail>
         </div>
       </div>
     </div>
